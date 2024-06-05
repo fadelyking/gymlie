@@ -1,3 +1,9 @@
+import Sidebar from "../components/dashboard/Sidebar";
+import SidebarItems from "../components/dashboard/SidebarItems";
 export default function Page() {
-    return <h1>Hello, Dashboard Page!</h1>;
+    return (
+        <Sidebar>
+            <SidebarItems />
+        </Sidebar>
+    );
 }
