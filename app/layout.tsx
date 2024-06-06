@@ -16,7 +16,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className=" py-6 px-5 bg-slate-200">{children}</body>
+            <body className=" py-6 px-5 bg-slate-200 flex gap-5">
+                {children}
+            </body>
         </html>
     );
 }
