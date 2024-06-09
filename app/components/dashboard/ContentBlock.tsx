@@ -1,11 +1,6 @@
 import { LineChart } from "@tremor/react";
-import members from "@/app/store/mocks/member-data";
-const transformedData = members.map((member) => ({
-    registration_date: new Date(member.registration_date)
-        .toISOString()
-        .split("T")[0], // Format date to YYYY-MM-DD
-    membership_status: member.membership_status ? 1 : 0, // Convert boolean to 1 or 0
-}));
+import fakedata from "@/app/store/mocks/member-data";
+
 export default function ContentBlock() {
     return (
         <>
@@ -36,11 +31,11 @@ export default function ContentBlock() {
                 <div>
                     <LineChart
                         className=" h-44 p-5"
-                        data={transformedData}
-                        index="registeration_date"
+                        data={fakedata}
+                        index="date"
                         showAnimation={true}
                         startEndOnly={true}
-                        categories={["membership_status"]}
+                        categories={["New Members"]}
                         colors={["indigo", "rose"]}
                         yAxisWidth={40}
                     />
