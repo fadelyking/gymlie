@@ -1,12 +1,5 @@
 import { faker } from "@faker-js/faker";
 
-const today = new Date();
-const sixMonthsFromToday = new Date(today);
-sixMonthsFromToday.setMonth(today.getMonth() + 6);
-const oneYearFromToday = new Date(today);
-oneYearFromToday.setFullYear(today.getFullYear() + 1);
-const randomDate = faker.date.between(today, oneYearFromToday);
-
 interface members {
     registration_date: string;
     first_name: string;
