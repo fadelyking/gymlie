@@ -30,14 +30,14 @@ export default function ContentBlock() {
             <div className="rounded-2xl drop-shadow-md bg-white col-span-2 row-span-3 row-start-6 col-start-3">
                 <div>
                     <LineChart
-                        className=" h-44 p-5"
+                        className=" h-52 p-5"
                         data={fakedata}
                         index="date"
                         showAnimation={true}
                         startEndOnly={true}
                         categories={["New Members"]}
                         colors={["indigo", "rose"]}
-                        yAxisWidth={40}
+                        yAxisWidth={33}
                     />
                 </div>
             </div>
