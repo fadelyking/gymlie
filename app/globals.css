@@ -3,17 +3,16 @@
 @tailwind utilities;
 
 @layer base {
-    #root {
-        @apply h-full;
-    }
+	#root {
+		@apply h-full;
+	}
 
-    html,
-    body {
-        @apply h-full;
-        @apply bg-transparent;
-        @apply font-mono;
-        @apply antialiased;
-        @apply text-black;
-        @apply overflow-hidden;
-    }
+	html,
+	body {
+		@apply h-full;
+		@apply bg-transparent;
+		@apply antialiased;
+		@apply text-black;
+		@apply overflow-hidden;
+	}
 }
