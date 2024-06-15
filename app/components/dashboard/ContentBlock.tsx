@@ -8,16 +8,18 @@ import {
 	TableHeaderCell,
 	TableRow,
 	DonutChart,
+	Badge,
 } from "@tremor/react";
 import {
 	fakeMemberData,
 	fakeSubscriptionPlanData,
 	fakeReturningMemberData,
 	fakeMonthlySalesData,
+	fakeMembers,
 } from "@/app/store/mocks/member-data";
+import dateFormatter from "@/app/utils/date-formatter";
+import valueFormatter from "@/app/utils/value-formatter";
 import Image from "next/image";
-const valueFormatter = (number: number) =>
-	`$${Intl.NumberFormat("us").format(number).toString()}`;
 
 export default function ContentBlock() {
 	return (
@@ -54,23 +56,27 @@ export default function ContentBlock() {
 				</div>
 			</div>
 			<div className="rounded-2xl drop-shadow-md bg-white p-5 col-span-8 row-span-7 row-start-2 col-start-11">
+				<div className="flex justify-center text-2xl p-4 font-bold text-gray-700">
+					Monthly Revenue
+				</div>
 				<DonutChart
 					data={fakeMonthlySalesData}
+					className="h-96 text-2xl "
 					category="sales"
 					index="month"
 					colors={[
-						"purple-950",
-						"purple-900",
-						"purple-800",
-						"purple-700",
-						"purple-600",
-						"purple-500",
-						"purple-400",
-						"purple-300",
-						"purple-200",
+						"blue-500",
+						"cyan-500",
+						"indigo-500",
+						"violet-500",
 						"fuchsia-500",
-						"fuchsia-400",
-						"fuchsia-300",
+						"green-500",
+						"yellow-500",
+						"orange-500",
+						"red-500",
+						"purple-500",
+						"teal-500",
+						"pink-500",
 					]}
 					valueFormatter={valueFormatter}
 				/>
@@ -132,39 +138,147 @@ export default function ContentBlock() {
 				</div>
 			</div>
 			<div className="rounded-2xl drop-shadow-md bg-white p-5 col-span-8 row-span-4 row-start-9 col-start-3">
+				<div className="ml-3 text-gray-600 text-lg">
+					Latest Subscriptions
+				</div>
 				<div className="mx-auto">
 					<Table>
 						<TableHead>
 							<TableRow>
 								<TableHeaderCell>Name</TableHeaderCell>
 								<TableHeaderCell className="text-right">
-									Monsters Slayed
+									Start Date
 								</TableHeaderCell>
-								<TableHeaderCell>Region</TableHeaderCell>
+								<TableHeaderCell>Phone Number</TableHeaderCell>
+								<TableHeaderCell>Membership</TableHeaderCell>
 								<TableHeaderCell>Status</TableHeaderCell>
+								<TableHeaderCell>Expires</TableHeaderCell>
 							</TableRow>
 						</TableHead>
 
 						<TableBody>
 							<TableRow>
-								<TableCell>Wilhelm Tell</TableCell>
-								<TableCell className="text-right">1</TableCell>
-								<TableCell>Uri, Schwyz, Unterwalden</TableCell>
-								<TableCell>National Hero</TableCell>
-							</TableRow>
-							<TableRow>
-								<TableCell>The Witcher</TableCell>
-								<TableCell className="text-right">
-									129
+								<TableCell>
+									{fakeMembers[fakeMembers.length - 1]
+										.firstName +
+										" " +
+										fakeMembers[fakeMembers.length - 1]
+											.lastName}
 								</TableCell>
-								<TableCell>Kaedwen</TableCell>
-								<TableCell>Legend</TableCell>
+								<TableCell className="text-right">
+									{dateFormatter(
+										fakeMembers[fakeMembers.length - 1]
+											.created
+									)}
+								</TableCell>
+								<TableCell>
+									{
+										fakeMembers[fakeMembers.length - 1]
+											.phoneNumber
+									}
+								</TableCell>
+								<TableCell>
+									{
+										fakeMembers[fakeMembers.length - 1]
+											.membership
+									}
+								</TableCell>
+								<TableCell>
+									{fakeMembers[fakeMembers.length - 1]
+										.membership ? (
+										<Badge color={"green"}>ACTIVE</Badge>
+									) : (
+										<Badge color={"red"}>INACTUVE</Badge>
+									)}
+								</TableCell>
+								<TableCell>
+									{dateFormatter(
+										fakeMembers[fakeMembers.length - 1]
+											.expires
+									)}
+								</TableCell>
 							</TableRow>
 							<TableRow>
-								<TableCell>Mizutsune</TableCell>
-								<TableCell className="text-right">82</TableCell>
-								<TableCell>Japan</TableCell>
-								<TableCell>N/A</TableCell>
+								<TableCell>
+									{fakeMembers[fakeMembers.length - 2]
+										.firstName +
+										" " +
+										fakeMembers[fakeMembers.length - 2]
+											.lastName}
+								</TableCell>
+								<TableCell className="text-right">
+									{dateFormatter(
+										fakeMembers[fakeMembers.length - 2]
+											.created
+									)}
+								</TableCell>
+								<TableCell>
+									{
+										fakeMembers[fakeMembers.length - 2]
+											.phoneNumber
+									}
+								</TableCell>
+								<TableCell>
+									{
+										fakeMembers[fakeMembers.length - 2]
+											.membership
+									}
+								</TableCell>
+								<TableCell>
+									{fakeMembers[fakeMembers.length - 2]
+										.membership ? (
+										<Badge color={"green"}>ACTIVE</Badge>
+									) : (
+										<Badge color={"red"}>INACTIVE</Badge>
+									)}
+								</TableCell>
+								<TableCell>
+									{dateFormatter(
+										fakeMembers[fakeMembers.length - 2]
+											.expires
+									)}
+								</TableCell>
+							</TableRow>
+							<TableRow>
+								<TableCell>
+									{fakeMembers[fakeMembers.length - 3]
+										.firstName +
+										" " +
+										fakeMembers[fakeMembers.length - 3]
+											.lastName}
+								</TableCell>
+								<TableCell className="text-right">
+									{dateFormatter(
+										fakeMembers[fakeMembers.length - 3]
+											.created
+									)}
+								</TableCell>
+								<TableCell>
+									{
+										fakeMembers[fakeMembers.length - 3]
+											.phoneNumber
+									}
+								</TableCell>
+								<TableCell>
+									{
+										fakeMembers[fakeMembers.length - 3]
+											.membership
+									}
+								</TableCell>
+								<TableCell>
+									{fakeMembers[fakeMembers.length - 3]
+										.membership ? (
+										<Badge color={"green"}>ACTIVE</Badge>
+									) : (
+										<Badge color={"red"}>INACTIVE</Badge>
+									)}
+								</TableCell>
+								<TableCell>
+									{dateFormatter(
+										fakeMembers[fakeMembers.length - 3]
+											.expires
+									)}
+								</TableCell>
 							</TableRow>
 						</TableBody>
 					</Table>
