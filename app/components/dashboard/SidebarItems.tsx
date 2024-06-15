@@ -18,7 +18,7 @@ export default function SidebarItems() {
 					<li className="flex hover:bg-slate-300/75 cursor-pointer px-2.5 py-3 rounded-md transition-colors duration-75">
 						<div className="flex gap-5 items-center flex-grow">
 							<MdAnalytics size={20} />
-							<span className=" pt-1">Analytics</span>
+							<span className=" pt-1">Activity</span>
 						</div>
 					</li>
 					<li className="flex hover:bg-slate-300/75 cursor-pointer px-2.5 py-3 rounded-md transition-colors duration-75">
