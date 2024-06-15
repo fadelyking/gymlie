@@ -25,9 +25,7 @@ export default function ContentBlock() {
 	return (
 		<>
 			<div className="row-start-1 col-start-3 col-span-9 text-lg">
-				<span className=" text-lg font-bold ">
-					Welcome back, Rickson
-				</span>
+				<span className=" text-lg font-bold ">Welcome back, Rawan</span>
 				<br></br>
 				<span>Here is your gym overview for today</span>
 			</div>
@@ -63,6 +61,7 @@ export default function ContentBlock() {
 					data={fakeMonthlySalesData}
 					className="h-96 text-2xl "
 					category="sales"
+					showAnimation={true}
 					index="month"
 					colors={[
 						"blue-500",
