@@ -71,7 +71,7 @@ const fakeMembers: Array<member> = [
 	},
 ];
 
-const fakeMemberData = [
+const fakeMemberData: Array<newMember> = [
 	{
 		date: "2023-06-01",
 		"New Members": faker.number.int({ min: 50, max: 300 }),
@@ -102,7 +102,7 @@ const fakeMemberData = [
 	},
 ];
 
-const fakeReturningMemberData = [
+const fakeReturningMemberData: Array<returningMember> = [
 	{
 		date: "2023-06-01",
 		"Returning Members": faker.number.int({ min: 10, max: 123 }),
@@ -133,7 +133,7 @@ const fakeReturningMemberData = [
 	},
 ];
 
-const fakeSubscriptionPlanData = [
+const fakeSubscriptionPlanData: Array<subscriptionPlanData> = [
 	{
 		date: "2023-06-01",
 		"1 Month": faker.number.int({ min: 5, max: 100 }),
@@ -190,7 +190,7 @@ const fakeSubscriptionPlanData = [
 	},
 ];
 
-const fakeMonthlySalesData = [
+const fakeMonthlySalesData: Array<financialData> = [
 	{ month: "January", sales: faker.number.int({ min: 1200, max: 2400 }) },
 	{ month: "February", sales: faker.number.int({ min: 1200, max: 2400 }) },
 	{ month: "March", sales: faker.number.int({ min: 1200, max: 2400 }) },
