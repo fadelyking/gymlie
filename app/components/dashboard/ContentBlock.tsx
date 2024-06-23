@@ -83,7 +83,7 @@ export default function ContentBlock() {
             <div className="rounded-2xl drop-shadow-md bg-white col-span-4 row-span-3 row-start-6 col-start-1 xl:col-start-3 xl:col-span-2">
                 <div>
                     <LineChart
-                        className=" h-52 p-2"
+                        className=" h-56 p-2"
                         data={fakeMemberData}
                         index="date"
                         showAnimation={true}
@@ -97,7 +97,7 @@ export default function ContentBlock() {
             <div className="rounded-2xl drop-shadow-md bg-white col-span-4 row-span-3 row-start-6 col-start-5 xl:col-start-5 xl:col-span-2">
                 <div>
                     <LineChart
-                        className=" h-52 p-2"
+                        className=" h-56 p-3"
                         data={fakeSubscriptionPlanData}
                         index="date"
                         showAnimation={true}
@@ -111,7 +111,7 @@ export default function ContentBlock() {
             <div className="rounded-2xl drop-shadow-md bg-white col-span-4 row-span-3 row-start-9 col-start-1 xl:col-start-7 xl:row-start-6 xl:col-span-2">
                 <div>
                     <LineChart
-                        className=" h-52 p-2"
+                        className=" h-56 p-3"
                         data={fakeReturningMemberData}
                         index="date"
                         showAnimation={true}
@@ -125,7 +125,7 @@ export default function ContentBlock() {
             <div className="rounded-2xl drop-shadow-md bg-white col-span-4 row-span-3 row-start-9 col-start-5 xl:col-start-9 xl:row-start-6 xl:col-span-2">
                 <div>
                     <LineChart
-                        className=" h-52 p-2"
+                        className=" h-56 p-3"
                         data={fakeMemberData}
                         index="date"
                         showAnimation={true}
