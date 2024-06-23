@@ -318,7 +318,7 @@ export default function ContentBlock() {
                         </Badge>
                         <div className="self-center left-14 absolute bg-slate-900 w-[2px] h-32 xl:h-48 -z-10 opacity-10 overflow-hidden " />
                     </div>
-                    <div className="flex flex-col gap-6 pt-4 col-start-2 col-span-full text-xs">
+                    <div className="flex flex-col gap-6 pt-4 pl-3 col-start-2 col-span-full text-xs">
                         <div className="flex flex-col">
                             Fadhel Alsaegh{" "}
                             <span className=" text-slate-500">
