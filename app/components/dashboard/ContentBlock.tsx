@@ -53,7 +53,7 @@ export default function ContentBlock() {
                     />
                 </div>
             </div>
-            <div className="rounded-2xl drop-shadow-md bg-white p-5 col-span-8 row-span-7 row-start-2 col-start-9 xl:col-start-11">
+            <div className="rounded-2xl drop-shadow-md bg-white p-5 col-span-full row-span-7 row-start-2 col-start-9 xl:col-start-11">
                 <div className="flex justify-center text-2xl p-4 font-bold text-gray-700">
                     Monthly Revenue
                 </div>
@@ -136,7 +136,7 @@ export default function ContentBlock() {
                     />
                 </div>
             </div>
-            <div className="rounded-2xl drop-shadow-md bg-white p-5 col-span-8 row-span-4 row-start-12 xl:row-start-9 xl:col-start-3 col-start-1">
+            <div className="rounded-2xl drop-shadow-md bg-white p-5 col-span-full row-span-4 row-start-12 xl:row-start-9 xl:col-start-3 col-start-1 xl:col-span-8">
                 <div className="ml-3 text-gray-600 text-lg">
                     Latest Subscriptions
                 </div>
@@ -283,7 +283,7 @@ export default function ContentBlock() {
                     </Table>
                 </div>
             </div>
-            <div className="rounded-2xl drop-shadow-md bg-white p-5 col-span-8 row-span-7 row-start-9 col-start-9 xl:col-start-11 xl:row-span-4">
+            <div className="rounded-2xl drop-shadow-md bg-white p-5 col-span-full row-span-3 row-start-9 col-start-9 xl:col-start-11 xl:row-span-4">
                 <div className="grid grid-cols-3 justify-center pl-3">
                     <div className="col-span-3">Latest Activity</div>
                     <div className="flex flex-col gap-8 pt-5 col-start-1 ">
@@ -312,30 +312,30 @@ export default function ContentBlock() {
                         <Badge
                             size="sm"
                             color={"gray"}
-                            className=" text-black bg-opacity-100 bg-slate-100"
+                            className=" text-black bg-opacity-100 bg-slate-100 hidden xl:block"
                         >
                             8:22
                         </Badge>
-                        <div className="self-center left-14 absolute bg-slate-900 w-[2px] h-48 -z-10 opacity-10 overflow-hidden" />
+                        <div className="self-center left-14 absolute bg-slate-900 w-[2px] h-32 xl:h-48 -z-10 opacity-10 overflow-hidden " />
                     </div>
-                    <div className="flex flex-col gap-6 pt-4 col-start-2 col-span-1 text-xs">
-                        <div>
+                    <div className="flex flex-col gap-6 pt-4 col-start-2 col-span-full text-xs">
+                        <div className="flex flex-col">
                             Fadhel Alsaegh{" "}
                             <span className=" text-slate-500">
                                 Professional
                             </span>
                         </div>
-                        <div>
+                        <div className="flex flex-col">
                             Ali Ahmed{" "}
                             <span className=" text-slate-500">Beginner</span>
                         </div>
-                        <div>
+                        <div className="flex flex-col">
                             Mohammed Ali{" "}
                             <span className=" text-slate-500">
                                 Intermediate
                             </span>
                         </div>
-                        <div>
+                        <div className="hidden xl:flex flex-col ">
                             Rawan Yousif{" "}
                             <span className=" text-slate-500">Beginner</span>
                         </div>
