@@ -4,7 +4,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <div className="grid grid-cols-12 grid-rows-16 gap-5 max-w-screen-2xl mx-auto xl:grid-rows-13">
+        <div className="flex flex-col gap-5 sm:grid sm:grid-cols-12 sm:grid-rows-16 sm:gap-5 max-w-80 sm:max-w-screen-2xl mx-auto xl:grid-rows-13">
             {children}
         </div>
     );

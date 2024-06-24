@@ -24,17 +24,17 @@ import Image from "next/image";
 export default function ContentBlock() {
     return (
         <>
-            <div className="row-start-1 col-start-1 col-span-9 text-lg xl:col-start-3">
+            <div className="col-start-3 place-items-center text-center sm:row-start-1 sm:col-start-1 col-span-9 text-lg xl:col-start-3">
                 <span className=" text-lg font-bold ">Welcome back, Rawan</span>
                 <br></br>
                 <span>Here is your gym overview for today</span>
             </div>
-            <div className="flex justify-between rounded-2xl drop-shadow-md  p-5 col-span-8 row-span-4 row-start-2 col-start-1 overflow-hidden bg-[#6D39E6] text-white xl:col-start-3">
+            <div className="flex justify-between rounded-2xl drop-shadow-md  p-5 col-span-full sm:col-span-8 row-span-3 sm:row-span-4 row-start-2 col-start-1 overflow-hidden bg-[#6D39E6] text-white xl:col-start-3">
                 <div className="flex flex-col justify-between ">
                     <div className=" text-2xl">
                         Ready to setup your club loyalty card?
                     </div>
-                    <div className=" text-lg">
+                    <div className=" text-lg p-4">
                         Increase your retention rates and members happiness
                         through our new happiness programme.
                     </div>
@@ -53,7 +53,7 @@ export default function ContentBlock() {
                     />
                 </div>
             </div>
-            <div className="rounded-2xl drop-shadow-md bg-white p-5 col-span-full row-span-7 row-start-2 col-start-9 xl:col-start-11">
+            <div className="rounded-2xl drop-shadow-md bg-white p-5 col-span-full col-start-1 row-start-6 row-span-5 sm:row-span-7 sm:row-start-2 sm:col-start-9 xl:col-start-11">
                 <div className="flex justify-center text-2xl p-4 font-bold text-gray-700">
                     Monthly Revenue
                 </div>
@@ -80,7 +80,7 @@ export default function ContentBlock() {
                     valueFormatter={valueFormatter}
                 />
             </div>
-            <div className="rounded-2xl drop-shadow-md bg-white col-span-4 row-span-3 row-start-6 col-start-1 xl:col-start-3 xl:col-span-2">
+            <div className="rounded-2xl drop-shadow-md bg-white col-span-full row-start-10 sm:col-span-4 sm:row-span-3 sm:row-start-6 col-start-1 xl:col-start-3 xl:col-span-2">
                 <div>
                     <LineChart
                         className=" h-56 p-2"
