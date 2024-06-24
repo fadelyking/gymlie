@@ -24,7 +24,7 @@ import Image from "next/image";
 export default function ContentBlock() {
     return (
         <>
-            <div className="col-start-3 place-items-center text-center sm:row-start-1 sm:col-start-1 col-span-9 text-lg xl:col-start-3">
+            <div className="col-start-1 place-items-center text-center sm:row-start-1 sm:col-start-1 col-span-9 text-lg xl:col-start-3">
                 <span className=" text-lg font-bold ">Welcome back, Rawan</span>
                 <br></br>
                 <span>Here is your gym overview for today</span>
