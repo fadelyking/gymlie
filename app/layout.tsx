@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className=" py-6 px-5 bg-slate-200 flex justify-center gap-5 h-auto max-w-screen-2xl mx-auto">
+            <body className="py-6 px-5 bg-slate-200 flex justify-center gap-5 sm:h-full max-w-screen-2xl mx-auto">
                 <main className={inter.className}>{children}</main>
             </body>
         </html>
