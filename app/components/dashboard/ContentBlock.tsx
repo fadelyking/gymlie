@@ -29,12 +29,12 @@ export default function ContentBlock() {
                 <br></br>
                 <span>Here is your gym overview for today</span>
             </div>
-            <div className="flex justify-between rounded-2xl drop-shadow-md  p-5 col-span-full sm:col-span-8 row-span-3 sm:row-span-4 row-start-2 col-start-1 overflow-hidden bg-[#6D39E6] text-white xl:col-start-3">
+            <div className="flex justify-between rounded-2xl drop-shadow-md  p-5 col-span-full sm:col-span-8 row-span-4 row-start-2 col-start-1 overflow-hidden bg-[#6D39E6] text-white xl:col-start-3">
                 <div className="flex flex-col justify-between ">
                     <div className=" text-2xl">
                         Ready to setup your club loyalty card?
                     </div>
-                    <div className=" text-lg p-4">
+                    <div className=" text-lg">
                         Increase your retention rates and members happiness
                         through our new happiness programme.
                     </div>
@@ -53,8 +53,8 @@ export default function ContentBlock() {
                     />
                 </div>
             </div>
-            <div className="rounded-2xl drop-shadow-md bg-white p-5 col-span-full col-start-1 row-start-6 row-span-5 sm:row-span-7 sm:row-start-2 sm:col-start-9 xl:col-start-11">
-                <div className="flex justify-center text-2xl p-4 font-bold text-gray-700">
+            <div className="rounded-2xl drop-shadow-md bg-white flex flex-col items-center p-5 col-span-full col-start-1 row-start-6 row-span-5 sm:row-span-7 sm:row-start-2 sm:col-start-9 xl:col-start-11">
+                <div className="text-2xl 2xl:pl-10 font-bold text-gray-700">
                     Monthly Revenue
                 </div>
                 <DonutChart
@@ -80,7 +80,7 @@ export default function ContentBlock() {
                     valueFormatter={valueFormatter}
                 />
             </div>
-            <div className="rounded-2xl drop-shadow-md bg-white col-span-full row-start-10 sm:col-span-4 sm:row-span-3 sm:row-start-6 col-start-1 xl:col-start-3 xl:col-span-2">
+            <div className="rounded-2xl drop-shadow-md bg-white col-span-full row-start-9 sm:col-span-4 sm:row-span-3 sm:row-start-6 col-start-1 xl:col-start-3 xl:col-span-2">
                 <div>
                     <LineChart
                         className=" h-56 p-2"
