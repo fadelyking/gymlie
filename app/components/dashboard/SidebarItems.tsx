@@ -7,10 +7,10 @@ import { IoMdSettings } from "react-icons/io";
 import { TbSwitch2 } from "react-icons/tb";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
+import Link from "next/link";
 
 export default function SidebarItems() {
     const pathname = usePathname();
-    console.log(pathname);
     return (
         <div className="flex flex-col gap-5 content-between justify-between">
             <div>
@@ -26,13 +26,17 @@ export default function SidebarItems() {
                     >
                         <div className="flex gap-5 items-center flex-grow">
                             <TbLayoutDashboardFilled size={20} />
-                            <span className=" pt-1">Dashboard</span>
+                            <Link href="/dashboard" className=" pt-1">
+                                Dashboard
+                            </Link>
                         </div>
                     </li>
                     <li className="flex hover:bg-slate-300/75 cursor-pointer px-2.5 py-3 rounded-md transition-colors duration-75">
                         <div className="flex gap-5 items-center flex-grow">
                             <MdAnalytics size={20} />
-                            <span className=" pt-1">Activity</span>
+                            <Link href="/dashboard/activity" className=" pt-1">
+                                Activity
+                            </Link>
                         </div>
                     </li>
                     <li className="flex hover:bg-slate-300/75 cursor-pointer px-2.5 py-3 rounded-md transition-colors duration-75">
