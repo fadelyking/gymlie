@@ -39,7 +39,7 @@ export default function ContentBlock() {
                         through our new happiness programme.
                     </div>
 
-                    <button className=" max-w-20  bg-white p-3 text-[#6D39E6] font-bold rounded-md">
+                    <button className="max-w-20 bg-white p-3 text-[#6D39E6] font-bold rounded-md">
                         Setup
                     </button>
                 </div>
