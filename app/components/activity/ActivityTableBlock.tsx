@@ -57,15 +57,21 @@ const data = [
         departement: "The Federal Department of Home Affairs (FDHA)",
         status: "active",
     },
+    {
+        name: "Elisabeth Baume-Schneider",
+        Role: "Federal Councillor",
+        departement: "The Federal Department of Home Affairs (FDHA)",
+        status: "active",
+    },
 ];
 
 export default function ActivityTableBlock() {
     return (
-        <Card className="col-start-3 col-span-full">
+        <Card className="col-start-3 col-span-full row-span-full">
             <h3 className="text-tremor-content-strong dark:text-dark-tremor-content-strong font-semibold">
                 Activity
             </h3>
-            <Table className="mt-5">
+            <Table className="mt-5 ">
                 <TableHead>
                     <TableRow>
                         <TableHeaderCell>Name</TableHeaderCell>
@@ -74,7 +80,7 @@ export default function ActivityTableBlock() {
                         <TableHeaderCell>Status</TableHeaderCell>
                     </TableRow>
                 </TableHead>
-                <TableBody>
+                <TableBody className="h-full">
                     {data.map((item) => (
                         <TableRow key={item.name}>
                             <TableCell>{item.name}</TableCell>
