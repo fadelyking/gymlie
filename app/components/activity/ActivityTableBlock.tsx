@@ -51,18 +51,6 @@ const data = [
             "The Federal Department of Economic Affairs, Education and Research (EAER)",
         status: "active",
     },
-    {
-        name: "Elisabeth Baume-Schneider",
-        Role: "Federal Councillor",
-        departement: "The Federal Department of Home Affairs (FDHA)",
-        status: "active",
-    },
-    {
-        name: "Elisabeth Baume-Schneider",
-        Role: "Federal Councillor",
-        departement: "The Federal Department of Home Affairs (FDHA)",
-        status: "active",
-    },
 ];
 
 export default function ActivityTableBlock() {
