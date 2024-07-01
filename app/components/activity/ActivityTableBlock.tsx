@@ -51,6 +51,41 @@ const data = [
             "The Federal Department of Economic Affairs, Education and Research (EAER)",
         status: "active",
     },
+    {
+        name: "Guy Parmelin",
+        Role: "Federal Councillor",
+        departement:
+            "The Federal Department of Economic Affairs, Education and Research (EAER)",
+        status: "active",
+    },
+    {
+        name: "Guy Parmelin",
+        Role: "Federal Councillor",
+        departement:
+            "The Federal Department of Economic Affairs, Education and Research (EAER)",
+        status: "active",
+    },
+    {
+        name: "Guy Parmelin",
+        Role: "Federal Councillor",
+        departement:
+            "The Federal Department of Economic Affairs, Education and Research (EAER)",
+        status: "active",
+    },
+    {
+        name: "Guy Parmelin",
+        Role: "Federal Councillor",
+        departement:
+            "The Federal Department of Economic Affairs, Education and Research (EAER)",
+        status: "active",
+    },
+    {
+        name: "Guy Parmelin",
+        Role: "Federal Councillor",
+        departement:
+            "The Federal Department of Economic Affairs, Education and Research (EAER)",
+        status: "active",
+    },
 ];
 
 export default function ActivityTableBlock() {
